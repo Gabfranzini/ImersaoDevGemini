@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="stars" style="bottom: -500px"></div>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./filmes.html">Filmes / Séries</a>
+            </li>
+            <li>
+              <a href="./jogos.html">Jogos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="./index.html" class="header-logo">
+          <img
+            src="./images/logo.png"
+            alt="Logo do Star Wars"
+            class="responsive-img logo"
+          />
+        </a>
+
+        <div class="header-search">
+          <input
+            type="text"
+            name="searchInput"
+            id="searchInput"
+            placeholder="Procure um filme/série/jogo"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            fill="#fff"
+            class="header-search__lupa"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <section class="filmes">
+      <div class="container">
+        <h2>Filmes</h2>
+        <div class="filmes-cards filmes-cards"></div>
+
+        <section class="cronologia">
+          <h2>Ordem Cronológica dos Filmes</h2>
+          <ul>
+            <li>Episódio I: A Ameaça Fantasma (1999)</li>
+            <li>Episódio II: Ataque dos Clones (2002)</li>
+            <li>Episódio III: A Vingança dos Sith (2005)</li>
+            <li>Episódio IV: Uma Nova Esperança (1977)</li>
+            <li>Episódio V: O Império Contra-Ataca (1980)</li>
+            <li>Episódio VI: O Retorno do Jedi (1983)</li>
+            <li>Episódio VII: O Despertar da Força (2015)</li>
+            <li>Episódio VIII: Os Últimos Jedi (2017)</li>
+            <li>Episódio IX: A Ascensão Skywalker (2019)</li>
+          </ul>
+        </section>
+
+        <h2>Séries</h2>
+        <div class="filmes-cards series"></div>
+
+        <p class="onde-achar">
+          É possível encontrar todos os filmes Star Wars na plataforma de
+          streaming Disney+! Com assinatura mensal de R$ 27,90 você pode
+          maratonar sozinho ou com os seus amigos!
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Todos os direitos reservados &copy;</p>
+        <p>Feito por Gabriela Franzini ❤️</p>
+      </div>
+    </footer>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+      const filmes = document.querySelector(".filmes-cards");
+      const filmesItems = data.filter((item) => {
+        if (item.type == "filme") {
+          const card = createCard(item);
+          filmes.appendChild(card);
+        }
+      });
+    </script>
+    <script>
+      const series = document.querySelector(".series");
+      const seriesItems = data.filter((item) => {
+        if (item.type == "serie") {
+          const card = createCard(item);
+          series.appendChild(card);
+        }
+      });
+    </script>
+  </body>
+</html>

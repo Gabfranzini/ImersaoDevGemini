@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./filmes.html">Filmes / Séries</a>
+            </li>
+            <li>
+              <a href="./jogos.html">Jogos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="./index.html" class="header-logo">
+          <img
+            src="./images/logo.png"
+            alt="Logo do Star Wars"
+            class="responsive-img logo"
+          />
+        </a>
+
+        <div class="header-search">
+          <input
+            type="text"
+            name="searchInput"
+            id="searchInput"
+            placeholder="Procure um filme/série/jogo"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            fill="#fff"
+            class="header-search__lupa"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Uma Galáxia Muito, Muito Distante...</h1>
+          <p>
+            Embarque em uma jornada épica através da galáxia e viva as aventuras
+            mais emocionantes de Star Wars. Descubra novos mundos, enfrente os
+            desafios do lado sombrio da Força e torne-se um verdadeiro Jedi.
+          </p>
+        </div>
+        <img
+          src="./images/droids.png"
+          alt="Darth Vader"
+          class="responsive-img"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Todos os direitos reservados &copy;</p>
+        <p>Feito por Gabriela Franzini ❤️</p>
+      </div>
+    </footer>
+
+    <!-- <h1>Filmes da saga Star wars</h1>
+
+    <h3>Star Wars Episódio IV: Uma Nova Esperança (1977)</h3>
+    <p>
+      A história começa com a Princesa Leia, que rouba os planos da Estrela da
+      Morte, <br />
+      uma super arma capaz de destruir planetas inteiros. Perseguida pelo
+      Império, <br />
+      ela esconde os planos em um droide e o envia para Tatooine, onde encontra
+      Luke Skywalker e o contrabandista Han Solo.<br />
+      Juntos, eles se unem à Aliança Rebelde para destruir a Estrela da Morte.
+    </p>
+
+    <h3>Star Wars Episódio V: O Império Contra-Ataca (1980)</h3>
+    <p>
+      A Aliança Rebelde, agora mais forte, continua sua luta contra o Império.
+      <br />
+      Luke Skywalker começa seu treinamento Jedi com Yoda, enquanto Han Solo é
+      capturado por Darth Vader e congelado em carbonite. <br />
+      A amizade entre Luke e Han é testada, e a identidade do pai de Luke é
+      revelada <br />
+    </p>
+
+    <h3>Star Wars Episódio VI: O Retorno do Jedi (1983)</h3>
+    <p>
+      Luke tenta resgatar Han Solo das mãos de Jabba the Hutt. <br />
+      Enquanto isso, a Aliança Rebelde se prepara para um ataque à segunda
+      Estrela da Morte. <br />
+      Luke enfrenta Darth Vader em um duelo épico, que culmina em uma revelação
+      chocante sobre a natureza da Força. <br />
+    </p>
+
+    <h3>Star Wars Episódio I: A Ameaça Fantasma (1999)</h3>
+    <p>
+      A história se passa décadas antes dos eventos do Episódio IV. <br />
+      O jovem Anakin Skywalker é descoberto como um Jedi com um alto potencial
+      para a Força. <br />
+      Enquanto isso, a República Galáctica enfrenta uma crise separatista,
+      liderada pelo Sith Darth Maul. <br />
+    </p>
+
+    <h3>Star Wars Episódio II: Ataque dos Clones (2002)</h3>
+    <p>
+      Anakin Skywalker, agora um jovem cavaleiro Jedi, é designado para proteger
+      a senadora Padmé Amidala, que está sendo ameaçada. <br />
+      A República é dividida pela guerra dos clones, e o Império Galáctico
+      começa a se formar. <br />
+    </p>
+
+    <h3>Star Wars Episódio III: A Vingança dos Sith (2005):</h3>
+    <p>
+      Anakin Skywalker, consumido pelo lado negro da Força, se torna Darth
+      Vader. A Ordem Jedi é destruída, <br />
+      e o Império Galáctico, liderado pelo Imperador Palpatine, toma o poder
+      <br />
+    </p>
+
+    <h3>Star Wars Episódio VII: O Despertar da Força (2015)</h3>
+    <p>
+      Décadas após a queda do Império, uma nova ameaça surge na galáxia: <br />
+      a Primeira Ordem. Uma jovem mulher chamada Rey descobre seus poderes da
+      Força e se junta à Resistência para enfrentar a Primeira Ordem.
+    </p>
+
+    <h3>Star Wars Episódio VIII: Os Últimos Jedi (2017)</h3>
+    <p>
+      A Resistência, agora enfraquecida, continua sua luta contra a Primeira
+      Ordem. <br />
+      Rey busca o treinamento Jedi com Luke Skywalker, enquanto a lealdade de
+      alguns personagens é testada. <br />
+    </p>
+
+    <h3>Star Wars Episódio IX: A Ascensão Skywalker (2019)</h3>
+    <p>
+      A saga Skywalker chega ao fim com um confronto épico entre a Resistência e
+      a Primeira Ordem. <br />
+      O destino da galáxia está em jogo, e os heróis devem enfrentar seus medos
+      e encontrar a força dentro de si para vencer. <br />
+    </p>
+
+    <h1>Ordem cronológica dos filmes</h1>
+    <ul>
+      <li>Episódio I: A Ameaça Fantasma (1999)</li>
+      <li>Episódio II: Ataque dos Clones (2002)</li>
+      <li>Episódio III: A Vingança dos Sith (2005)</li>
+      <li>Episódio IV: Uma Nova Esperança (1977)</li>
+      <li>Episódio V: O Império Contra-Ataca (1980)</li>
+      <li>Episódio VI: O Retorno do Jedi (1983)</li>
+      <li>Episódio VII: O Despertar da Força (2015)</li>
+      <li>Episódio VIII: Os Últimos Jedi (2017)</li>
+      <li>Episódio IX: A Ascensão Skywalker (2019)</li>
+    </ul>
+
+    <h1>Séries/Filme sobre o universo de Star Wars</h1>
+    <h3>The Mandalorian</h3>
+    <p>
+      Ambientada após os eventos de "O Retorno de Jedi", a série live-action
+      acompanha um caçador de recompensas solitário em uma galáxia em transição.
+    </p>
+    <h3>Obi-Wan Kenobi</h3>
+    <p>
+      Uma minissérie que explora a vida de Obi-Wan Kenobi durante os anos entre
+      os episódios III e IV.
+    </p>
+    <h3>Ahsoka</h3>
+    <p>
+      Um spin-off de The Mandalorian que se concentra na personagem Ahsoka Tano,
+      uma ex-Padawan de Anakin Skywalker.
+    </p>
+    <h3>Star Wars Rebels</h3>
+    <p>
+      Ambientada entre os episódios III e IV, a série acompanha um grupo de
+      rebeldes que luta contra o Império Galáctico.
+    </p>
+    <h3>Star Wars: The Clone Wars</h3>
+    <p>
+      A série animada que explora a Guerra dos Clones em detalhes, apresentando
+      novos personagens e aprofundando a história de Anakin Skywalker e Obi-Wan
+      Kenobi.
+    </p>
+    <h3>Han Solo: Uma História Star Wars</h3>
+    <p>
+      O filme acompanha Han Solo em suas aventuras perigosas no submundo
+      criminoso. <br />
+      Ainda jovem e ambicioso, ele busca uma vida melhor e sonha em escapar de
+      sua realidade. <br />
+      Ao lado de sua parceira, Qi'ra, Han se envolve em uma missão perigosa que
+      o coloca em contato com figuras importantes do universo Star Wars, como
+      Chewbacca e Lando Calrissian. <br />
+    </p>
+
+    <h1>Onde posso assistir os filmes da saga?</h1>
+    <p>
+      É possível encontrar todos os filmes Star Wars na plataforma de streaming
+      Disney+! Com assinatura mensal de R$ 27,90 você pode maratonar sozinho ou
+      com os seus amigos!
+    </p> -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
