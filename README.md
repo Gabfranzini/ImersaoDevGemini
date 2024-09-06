@@ -1,6 +1,7 @@
 # Projeto: Site de Pesquisa sobre o Universo de Star Wars
 
 Este projeto consiste em um site de pesquisa dedicado ao universo de Star Wars. O site permite que os usuários explorem informações detalhadas sobre filmes, séries e jogos do vasto universo de Star Wars.
+https://imersao-dev-gemini-delta.vercel.app/
 
 ## Índice
 
